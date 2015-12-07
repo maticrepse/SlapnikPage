@@ -31,3 +31,14 @@
 .content {
 	font-family: "Helvetica";
 }
+#slapnikTab{
+	/*Odkomentiraj spodnjo vrstico (display: block;), da bo izbran ta tab pri vstopu v stran in zakomentiraj vrstico display: none;*/
+	/*display: block;*/
+	display: none;
+}
+#enatriTab{
+	display: none;
+}
+#ullsTab{
+	display: none;
+}
