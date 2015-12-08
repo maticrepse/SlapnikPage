@@ -96,7 +96,7 @@ $(document).ready(function(){
 			});
 		} else if($(".slapnikNav p").css('display') == "block"){
 			$("#slapnikTab").fadeToggle(400);
-			$(".slapnikNav p").fadeToggle(400, function(){
+			$(".slapnikNav p").slideToggle(400, function(){
 				$("#onasTab").fadeToggle(400);
 			});
 		} else if($("#kontaktTab").css('display') == "block"){
@@ -120,7 +120,7 @@ $(document).ready(function(){
 			});
 		} else if($(".slapnikNav p").css('display') == "block"){
 			$("#slapnikTab").fadeToggle(400);
-			$(".slapnikNav p").fadeToggle(400, function(){
+			$(".slapnikNav p").slideToggle(400, function(){
 				$("#kontaktTab").fadeToggle(400);
 			});
 		} else if($("#onasTab").css('display') == "block"){
