@@ -1,5 +1,6 @@
 .navigation {
-	font-family: "Helvetica";
+	font-family: 'Bodoni MT', Didot;
+	/*font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;*/
 }
 .navigation h1 {
 	margin-top: 25px;
