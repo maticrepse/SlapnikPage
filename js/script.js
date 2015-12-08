@@ -1,15 +1,15 @@
 $(document).ready(function(){
 	$(".slapnikNav li a").click(function(){
 		if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle("slow", function(){
-				$(".slapnikNav p").slideToggle("slow");
+			$(".enatriNav p").slideToggle(300, function(){
+				$(".slapnikNav p").slideToggle(300);
 			});
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle("slow", function(){
-				$(".slapnikNav p").slideToggle("slow");
+			$(".ullsNav p").slideToggle(300, function(){
+				$(".slapnikNav p").slideToggle(300);
 			});
 		} else {
-			$(".slapnikNav p").slideToggle("slow");
+			$(".slapnikNav p").slideToggle(300);
 		}
 		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
 		//$("#slapnikTab").show();
@@ -21,15 +21,15 @@ $(document).ready(function(){
 	});
 	$(".enatriNav li a").click(function(){
 		if($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle("slow", function(){
-				$(".enatriNav p").slideToggle("slow");
+			$(".slapnikNav p").slideToggle(300, function(){
+				$(".enatriNav p").slideToggle(300);
 			});
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle("slow", function(){
-				$(".enatriNav p").slideToggle("slow");
+			$(".ullsNav p").slideToggle(300, function(){
+				$(".enatriNav p").slideToggle(300);
 			});
 		} else {
-			$(".enatriNav p").slideToggle("slow");
+			$(".enatriNav p").slideToggle(300);
 		}
 		$("#slapnikTab").hide();
 		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
@@ -41,15 +41,15 @@ $(document).ready(function(){
 	});
 	$(".ullsNav li a").click(function(){
 		if($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle("slow", function(){
-				$(".ullsNav p").slideToggle("slow");
+			$(".slapnikNav p").slideToggle(300, function(){
+				$(".ullsNav p").slideToggle(300);
 			});
 		} else if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle("slow", function(){
-				$(".ullsNav p").slideToggle("slow");
+			$(".enatriNav p").slideToggle(300, function(){
+				$(".ullsNav p").slideToggle(300);
 			});
 		} else {
-			$(".ullsNav p").slideToggle("slow");
+			$(".ullsNav p").slideToggle(300);
 		}
 		$("#slapnikTab").hide();
 		$("#enatriTab").hide();
@@ -61,11 +61,11 @@ $(document).ready(function(){
 	});
 	$(".onasNav li a").click(function(){
 		if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle("slow");
+			$(".enatriNav p").slideToggle(300);
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle("slow");
+			$(".ullsNav p").slideToggle(300);
 		} else if ($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle("slow");
+			$(".slapnikNav p").slideToggle(300);
 		}
 		$("#slapnikTab").hide();
 		$("#enatriTab").hide();
@@ -77,11 +77,11 @@ $(document).ready(function(){
 	});
 	$(".kontaktNav li a").click(function(){
 		if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle("slow");
+			$(".enatriNav p").slideToggle(300);
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle("slow");
+			$(".ullsNav p").slideToggle(300);
 		} else if ($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle("slow");
+			$(".slapnikNav p").slideToggle(300);
 		}
 		$("#slapnikTab").hide();
 		$("#enatriTab").hide();
