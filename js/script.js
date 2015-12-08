@@ -1,94 +1,134 @@
 $(document).ready(function(){
 	$(".slapnikNav li a").click(function(){
 		if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle(300, function(){
-				$(".slapnikNav p").slideToggle(300);
+			$("#enatriTab").fadeToggle(400);
+			$(".enatriNav p").slideToggle(400, function(){
+				$("#slapnikTab").fadeToggle(400);
+				$(".slapnikNav p").slideToggle(400);
 			});
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle(300, function(){
-				$(".slapnikNav p").slideToggle(300);
+			$("#ullsTab").fadeToggle(400);
+			$(".ullsNav p").slideToggle(400, function(){
+				$("#slapnikTab").fadeToggle(400);
+				$(".slapnikNav p").slideToggle(400);
+			});
+		} else if($("#onasTab").css('display') == "block"){
+			$("#onasTab").fadeToggle(400, function(){
+				$("#slapnikTab").fadeToggle(400);
+				$(".slapnikNav p").slideToggle(400);
+			});
+		} else if($("#kontaktTab").css('display') == "block"){
+			$("#kontaktTab").fadeToggle(400, function(){
+				$("#slapnikTab").fadeToggle(400);
+				$(".slapnikNav p").slideToggle(400);
 			});
 		} else {
-			$(".slapnikNav p").slideToggle(300);
+			$("#slapnikTab").fadeToggle(400);
+			$(".slapnikNav p").slideToggle(400);
 		}
-		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
-		//$("#slapnikTab").show();
-		$("#slapnikTab").toggle();
-		$("#enatriTab").hide();
-		$("#ullsTab").hide();
-		$("#onasTab").hide();
-		$("#kontaktTab").hide();
 	});
 	$(".enatriNav li a").click(function(){
 		if($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle(300, function(){
-				$(".enatriNav p").slideToggle(300);
+			$("#slapnikTab").fadeToggle(400);
+			$(".slapnikNav p").slideToggle(400, function(){
+				$("#enatriTab").fadeToggle(400);
+				$(".enatriNav p").slideToggle(400);
 			});
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle(300, function(){
-				$(".enatriNav p").slideToggle(300);
+			$("#ullsTab").fadeToggle(400);
+			$(".ullsNav p").slideToggle(400, function(){
+				$("#enatriTab").fadeToggle(400);
+				$(".enatriNav p").slideToggle(400);
+			});
+		} else if($("#onasTab").css('display') == "block"){
+			$("#onasTab").fadeToggle(400, function(){
+				$("#enatriTab").fadeToggle(400);
+				$(".enatriNav p").slideToggle(400);
+			});
+		} else if($("#kontaktTab").css('display') == "block"){
+			$("#kontaktTab").fadeToggle(400, function(){
+				$("#enatriTab").fadeToggle(400);
+				$(".enatriNav p").slideToggle(400);
 			});
 		} else {
-			$(".enatriNav p").slideToggle(300);
+			$("#enatriTab").fadeToggle(400);
+			$(".enatriNav p").slideToggle(400);
 		}
-		$("#slapnikTab").hide();
-		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
-		//$("#enatriTab").show();
-		$("#enatriTab").toggle();
-		$("#ullsTab").hide();
-		$("#onasTab").hide();
-		$("#kontaktTab").hide();
 	});
 	$(".ullsNav li a").click(function(){
-		if($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle(300, function(){
-				$(".ullsNav p").slideToggle(300);
+		if($(".enatriNav p").css('display') == "block"){
+			$("#enatriTab").fadeToggle(400);
+			$(".enatriNav p").slideToggle(400, function(){
+				$("#ullsTab").fadeToggle(400);
+				$(".ullsNav p").slideToggle(400);
 			});
-		} else if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle(300, function(){
-				$(".ullsNav p").slideToggle(300);
+		} else if($(".slapnikNav p").css('display') == "block"){
+			$("#slapnikTab").fadeToggle(400);
+			$(".slapnikNav p").slideToggle(400, function(){
+				$("#ullsTab").fadeToggle(400);
+				$(".ullsNav p").slideToggle(400);
+			});
+		} else if($("#onasTab").css('display') == "block"){
+			$("#onasTab").fadeToggle(400, function(){
+				$("#ullsTab").fadeToggle(400);
+				$(".ullsNav p").slideToggle(400);
+			});
+		} else if($("#kontaktTab").css('display') == "block"){
+			$("#kontaktTab").fadeToggle(400, function(){
+				$("#ullsTab").fadeToggle(400);
+				$(".ullsNav p").slideToggle(400);
 			});
 		} else {
-			$(".ullsNav p").slideToggle(300);
+			$("#ullsTab").fadeToggle(400);
+			$(".ullsNav p").slideToggle(400);
 		}
-		$("#slapnikTab").hide();
-		$("#enatriTab").hide();
-		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
-		//$("#ullsTab").show();
-		$("#ullsTab").toggle();
-		$("#onasTab").hide();
-		$("#kontaktTab").hide();
 	});
 	$(".onasNav li a").click(function(){
 		if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle(300);
+			$("#enatriTab").fadeToggle(400);
+			$(".enatriNav p").slideToggle(400, function(){
+				$("#onasTab").fadeToggle(400);
+			});
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle(300);
-		} else if ($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle(300);
+			$("#ullsTab").fadeToggle(400);
+			$(".ullsNav p").slideToggle(400, function(){
+				$("#onasTab").fadeToggle(400);
+			});
+		} else if($(".slapnikNav p").css('display') == "block"){
+			$("#slapnikTab").fadeToggle(400);
+			$(".slapnikNav p").fadeToggle(400, function(){
+				$("#onasTab").fadeToggle(400);
+			});
+		} else if($("#kontaktTab").css('display') == "block"){
+			$("#kontaktTab").fadeToggle(400, function(){
+				$("#onasTab").fadeToggle(400);
+			});
+		} else {
+			$("#onasTab").fadeToggle(400);
 		}
-		$("#slapnikTab").hide();
-		$("#enatriTab").hide();
-		$("#ullsTab").hide();
-		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
-		//$("#onasTab").show();
-		$("#onasTab").toggle();
-		$("#kontaktTab").hide();
 	});
 	$(".kontaktNav li a").click(function(){
 		if($(".enatriNav p").css('display') == "block"){
-			$(".enatriNav p").slideToggle(300);
+			$("#enatriTab").fadeToggle(400);
+			$(".enatriNav p").slideToggle(400, function(){
+				$("#kontaktTab").fadeToggle(400);
+			});
 		} else if($(".ullsNav p").css('display') == "block"){
-			$(".ullsNav p").slideToggle(300);
-		} else if ($(".slapnikNav p").css('display') == "block"){
-			$(".slapnikNav p").slideToggle(300);
+			$("#ullsTab").fadeToggle(400);
+			$(".ullsNav p").slideToggle(400, function(){
+				$("#kontaktTab").fadeToggle(400);
+			});
+		} else if($(".slapnikNav p").css('display') == "block"){
+			$("#slapnikTab").fadeToggle(400);
+			$(".slapnikNav p").fadeToggle(400, function(){
+				$("#kontaktTab").fadeToggle(400);
+			});
+		} else if($("#onasTab").css('display') == "block"){
+			$("#onasTab").fadeToggle(400, function(){
+				$("#kontaktTab").fadeToggle(400);
+			});
+		} else {
+			$("#kontaktTab").fadeToggle(400);
 		}
-		$("#slapnikTab").hide();
-		$("#enatriTab").hide();
-		$("#ullsTab").hide();
-		$("#onasTab").hide();
-		//Odkomentiraj spodnjo vrstico in zakomentiraj vrstico pod njo, da bo vedno prikazan en element
-		//$("#kontaktTab").show();
-		$("#kontaktTab").toggle();
 	});
 });
