@@ -131,4 +131,26 @@ $(document).ready(function(){
 			$("#kontaktTab").fadeToggle(400);
 		}
 	});
+	$(".navbar-toggle").click(function(){
+		$(".navbar-content").slideToggle(400);
+	});
+});
+$(window).ready(function(){
+	var width = window.innerWidth;
+	if(width<768){
+		//@media (max-width: 767px)
+		//širina gumba 44px
+		$(".navbar-toggle").css('left', width/2-22-15);
+	}else{
+
+	}
+});
+$(window).resize(function(){
+	var width = window.innerWidth;
+	if(width<768){
+		//@media (max-width: 767px)
+		$(".navbar-toggle").css('left', width/2-22-15);
+	}else{
+
+	}
 });

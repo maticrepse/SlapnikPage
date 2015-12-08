@@ -51,3 +51,34 @@
 #kontaktTab{
 	display: none;
 }
+@media (max-width: 767px) {
+	.navbar-content{
+		/*display: none;*/
+		text-align: center;
+	}
+	.navigation h1{
+		text-align: center;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.navbar-toggle{
+		float: none;
+		margin: 0px;
+	}
+	.navigation ul{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	.navigation p{
+		margin-left: 0px;
+		text-align: center;
+	}
+
+}
+/*Overwrite bootstrap*/
+.navbar-toggle{
+	background-color: #333333;
+}
+.icon-bar{
+	background-color: white;
+}
