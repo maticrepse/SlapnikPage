@@ -6,30 +6,46 @@
 	margin-top: 25px;
 	margin-left: 25px;
 	font-size: 40px;
+	color: #6C6C69;
 }
 .navigation ul {
 	padding: 0px;
-	margin-top: 70px;
 	margin-left: 25px;
 	list-style: none;
+}
+.kolekcije{
+	margin-top: 70px;
+	font-size: 20px;
+	color: #8C8D89;
+}
+.podatki{
+	margin-top: 50px;
+	font-size: 17px;
+	color: #92938F;
+}
+.kolekcije a{
+	color: #8C8D89;
+}
+.podatki a{
+	color: #92938F;
 }
 .navigation li {
 	padding: 0px;
 	margin: 0px;
 }
 .navigation a {
-	font-size: 17px;
-	color: black;
+	/*font-size: 20px;*/
 	text-decoration: none;
-	
+	/*color: #92938F;*/
 }
 .navigation a:hover {
 	color: gray;
 }
 .navigation p {
 	margin-left: 50px;
-	font-size: 80%;
+	font-size: 70%;
 	font-weight: 300;
+	color: #92938F;
 }
 .content {
 	font-family: "Helvetica";
@@ -53,7 +69,9 @@
 }
 @media (max-width: 767px) {
 	.navbar-content{
-		/*display: none;*/
+		display: none;/*Odkomentiraj za gumb*/
+		margin-left: 30%;
+		margin-right: 30%;
 		text-align: center;
 	}
 	.navigation h1{
@@ -65,19 +83,24 @@
 		float: none;
 		margin: 0px;
 	}
+	.podatki{
+		margin-top: 20px;
+	}
+	.kolekcije{
+		margin-top: 10px;
+	}
 	.navigation ul{
 		margin-left: 0px;
-		margin-top: 10px;
 	}
 	.navigation p{
 		margin-left: 0px;
-		text-align: center;
+		text-align: left;
 	}
 
 }
 /*Overwrite bootstrap*/
 .navbar-toggle{
-	background-color: #333333;
+	background-color: #92938F;
 }
 .icon-bar{
 	background-color: white;
