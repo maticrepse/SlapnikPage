@@ -140,9 +140,11 @@ $(document).ready(function(){
 	});
 	$(".CarouselClass").swiperight(function() {
 		$(this).carousel('prev');
+		$(this).css('margin-bottom', 75);
 	});
 	$(".CarouselClass").swipeleft(function() {
 		$(this).carousel('next');
+		$(this).css('margin-bottom', 75);
 	});
 });
 $(window).ready(function(){
