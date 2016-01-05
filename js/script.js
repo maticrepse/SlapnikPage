@@ -383,9 +383,14 @@ $(document).ready(function(){
 	$(".navbar-toggle").click(function(){
 		$(".navbar-content").slideToggle(400);
 	});
+	var stevecHover=0;
 	$(".CarouselClass").hover(function(){
-		$(".carousel-control.left").fadeToggle(400);
-		$(".carousel-control.right").fadeToggle(400);
+		if(stevecHover==0){
+			stevecHover++;
+		}else{
+			$(".carousel-control.left").fadeToggle(400);
+			$(".carousel-control.right").fadeToggle(400);
+		}
 	});
 	$(".CarouselClass").swiperight(function() {
 		$(this).carousel('prev');
