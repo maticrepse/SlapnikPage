@@ -106,6 +106,9 @@
 		margin-top: 20px;
 		margin-bottom: 75px;
 	}
+	#zacetnaSlika{
+		margin-top: 75px;
+	}
 
 }
 /*Overwrite bootstrap*/

@@ -144,7 +144,6 @@ $(document).ready(function(){
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
 			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
-				console.log("SHIIIIIIIIIIIIIIIIIIT");
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
