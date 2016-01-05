@@ -131,23 +131,24 @@ $(document).ready(function(){
 			}
 		});
 		$(".onasNav li a").click(function () {
-			if ($("#opisMobileEnatri").css('display') == "block") {
+			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
-				$("#opisMobileEnatri").slideToggle(400);
+				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
-				$("#opisMobileUlls").slideToggle(400);
+				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
-			} else if ($("#opisMobileSlapnik").css('display') == "block") {
+			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
+				console.log("SHIIIIIIIIIIIIIIIIIIT");
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
-				$("#opisMobileSlapnik").slideToggle(400);
+				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
@@ -169,23 +170,23 @@ $(document).ready(function(){
 			}
 		});
 		$(".kontaktNav li a").click(function () {
-			if ($("#opisMobileEnatri").css('display') == "block") {
+			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
-				$("#opisMobileEnatri").slideToggle(400);
+				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
-				$("#opisMobileUlls").slideToggle(400);
+				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
-			} else if ($("#opisMobileSlapnik").css('display') == "block") {
+			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
-				$("#opisMobileSlapnik").slideToggle(400);
+				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
 			} else if ($("#onasTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
