@@ -138,6 +138,12 @@ $(document).ready(function(){
 		$(".carousel-control.left").fadeToggle(400);
 		$(".carousel-control.right").fadeToggle(400);
 	});
+	$(".CarouselClass").swiperight(function() {
+		$(this).carousel('prev');
+	});
+	$(".CarouselClass").swipeleft(function() {
+		$(this).carousel('next');
+	});
 });
 $(window).ready(function(){
 	var width = window.innerWidth;
@@ -145,6 +151,7 @@ $(window).ready(function(){
 		//@media (max-width: 767px)
 		//širina gumba 44px
 		$(".navbar-toggle").css('left', width/2-22-15);
+		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 	}else if (width<1200){
 		$(".CarouselClass").css('left', ((width*0.666)-(width*0.666)*0.6)/2);
 	}else{
@@ -156,6 +163,7 @@ $(window).resize(function(){
 	if(width<768){
 		//@media (max-width: 767px)
 		$(".navbar-toggle").css('left', width/2-22-15);
+		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 	}else if (width<1200){
 		$(".CarouselClass").css('left', ((width*0.666)-(width*0.666)*0.6)/2);
 	}else{
