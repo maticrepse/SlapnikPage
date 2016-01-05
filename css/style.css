@@ -67,6 +67,12 @@
 #kontaktTab{
 	display: none;
 }
+.CarouselClass{
+	width: 60%;
+	position: absolute;
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
 @media (max-width: 767px) {
 	.navbar-content{
 		display: none;/*Odkomentiraj za gumb*/
@@ -96,6 +102,10 @@
 		margin-left: 0px;
 		text-align: left;
 	}
+	.CarouselClass{
+		margin-top: 20px;
+		margin-bottom: 75px;
+	}
 
 }
 /*Overwrite bootstrap*/
@@ -104,12 +114,6 @@
 }
 .icon-bar{
 	background-color: white;
-}
-.CarouselClass{
-	width: 60%;
-	position: absolute;
-	margin-top: 75px;
-	margin-bottom: 75px;
 }
 .carousel-control.left{
 	display:none;
@@ -132,4 +136,9 @@
 }
 .ui-loader{
 	display: none;
+}
+.opisMobilno{
+	display: none;
+	width:40%;
+	margin-top: 20px;
 }
