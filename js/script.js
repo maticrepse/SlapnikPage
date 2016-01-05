@@ -23,7 +23,15 @@ $(document).ready(function(){
 				$(".slapnikNav p").slideToggle(400);
 			});
 		} else {
-			$("#slapnikTab").fadeToggle(400);
+			if($(".slapnikNav p").css('display') == "block"){
+				$("#slapnikTab").fadeToggle(400, function(){
+					$("#defaultTab").fadeToggle(400);
+				});
+			}else{
+				$("#defaultTab").fadeToggle(400, function(){
+					$("#slapnikTab").fadeToggle(400);
+				});
+			}
 			$(".slapnikNav p").slideToggle(400);
 		}
 	});
@@ -51,7 +59,15 @@ $(document).ready(function(){
 				$(".enatriNav p").slideToggle(400);
 			});
 		} else {
-			$("#enatriTab").fadeToggle(400);
+			if($(".enatriNav p").css('display') == "block"){
+				$("#enatriTab").fadeToggle(400, function(){
+					$("#defaultTab").fadeToggle(400);
+				});
+			}else{
+				$("#defaultTab").fadeToggle(400, function(){
+					$("#enatriTab").fadeToggle(400);
+				});
+			}
 			$(".enatriNav p").slideToggle(400);
 		}
 	});
@@ -79,7 +95,15 @@ $(document).ready(function(){
 				$(".ullsNav p").slideToggle(400);
 			});
 		} else {
-			$("#ullsTab").fadeToggle(400);
+			if($(".ullsNav p").css('display') == "block"){
+				$("#ullsTab").fadeToggle(400, function(){
+					$("#defaultTab").fadeToggle(400);
+				});
+			}else{
+				$("#defaultTab").fadeToggle(400, function(){
+					$("#ullsTab").fadeToggle(400);
+				});
+			}
 			$(".ullsNav p").slideToggle(400);
 		}
 	});
@@ -104,7 +128,15 @@ $(document).ready(function(){
 				$("#onasTab").fadeToggle(400);
 			});
 		} else {
-			$("#onasTab").fadeToggle(400);
+			if($("#onasTab").css('display') == "block"){
+				$("#onasTab").fadeToggle(400, function(){
+					$("#defaultTab").fadeToggle(400);
+				});
+			}else{
+				$("#defaultTab").fadeToggle(400, function(){
+					$("#onasTab").fadeToggle(400);
+				});
+			}
 		}
 	});
 	$(".kontaktNav li a").click(function(){
@@ -128,7 +160,15 @@ $(document).ready(function(){
 				$("#kontaktTab").fadeToggle(400);
 			});
 		} else {
-			$("#kontaktTab").fadeToggle(400);
+			if($("#kontaktTab").css('display') == "block"){
+				$("#kontaktTab").fadeToggle(400, function(){
+					$("#defaultTab").fadeToggle(400);
+				});
+			}else{
+				$("#defaultTab").fadeToggle(400, function(){
+					$("#kontaktTab").fadeToggle(400);
+				});
+			}
 		}
 	});
 	$(".navbar-toggle").click(function(){
@@ -140,11 +180,11 @@ $(document).ready(function(){
 	});
 	$(".CarouselClass").swiperight(function() {
 		$(this).carousel('prev');
-		$(this).css('margin-bottom', 75);
+		//$(this).css('margin-bottom', 75);
 	});
 	$(".CarouselClass").swipeleft(function() {
 		$(this).carousel('next');
-		$(this).css('margin-bottom', 75);
+		//$(this).css('margin-bottom', 75);
 	});
 });
 $(window).ready(function(){
