@@ -129,6 +129,10 @@
 }
 .item img {
 	width: 100%;
-}.ui-loader{
+}
+.ui-loader{
 	display: none;
- }
+}
+.ui-page{
+	margin-bottom: 75%;
+}
