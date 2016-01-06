@@ -456,16 +456,19 @@ $(window).ready(function(){
 	var width = window.innerWidth;
 	if(width<768){
 		//@media (max-width: 767px)
-		//širina gumba 44px
 		$(".navbar-toggle").css('left', width/2-22-15);
 		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
+		$(".CarouselClass").css('width', "60%");
 	}else if (width<1200){
+		$(".CarouselClass").css('width', 400);
 		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
 	}else if(width<1441){
+		$(".CarouselClass").css('width', 400);
 		$(".CarouselClass").css('left', ((width*0.75)-400)/2);
 	}else{
-
+		$(".CarouselClass").css('width', "37.037%");
+		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
 	}
 });
 $(window).resize(function(){
@@ -475,9 +478,12 @@ $(window).resize(function(){
 		$(".navbar-toggle").css('left', width/2-22-15);
 		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
+		$(".CarouselClass").css('width', "60%");
 	}else if (width<1200){
+		$(".CarouselClass").css('width', 400);
 		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
 	}else if(width<1441){
+		$(".CarouselClass").css('width', 400);
 		$(".CarouselClass").css('left', ((width*0.75)-400)/2);
 	}else{
 		$(".CarouselClass").css('width', "37.037%");
