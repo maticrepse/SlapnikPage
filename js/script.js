@@ -461,9 +461,9 @@ $(window).ready(function(){
 		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
 	}else if (width<1200){
-		$(".CarouselClass").css('left', ((width*0.666)-(width*0.666)*0.6)/2);
+		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
 	}else{
-		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.6)/2);
+		$(".CarouselClass").css('left', ((width*0.75)-400)/2);
 	}
 });
 $(window).resize(function(){
@@ -474,8 +474,8 @@ $(window).resize(function(){
 		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
 	}else if (width<1200){
-		$(".CarouselClass").css('left', ((width*0.666)-(width*0.666)*0.6)/2);
+		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
 	}else{
-		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.6)/2);
+		$(".CarouselClass").css('left', ((width*0.75)-400)/2);
 	}
 });

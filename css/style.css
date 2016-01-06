@@ -68,7 +68,7 @@
 	display: none;
 }
 .CarouselClass{
-	width: 60%;
+	width: 400px;
 	position: absolute;
 	margin-top: 75px;
 	margin-bottom: 75px;
@@ -121,6 +121,7 @@
 	.CarouselClass{
 		margin-top: 20px;
 		margin-bottom: 75px;
+		width:60%;
 	}
 	#zacetnaSlika{
 		margin-top: 75px;
