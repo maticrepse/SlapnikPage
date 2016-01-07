@@ -460,6 +460,8 @@ $(window).ready(function(){
 		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
 		$(".CarouselClass").css('width', "60%");
+		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
+		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
 	}else if (width<1200){
 		$(".CarouselClass").css('width', 400);
 		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
@@ -479,6 +481,8 @@ $(window).resize(function(){
 		$(".CarouselClass").css('left', (width-(width*0.6))/2);
 		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
 		$(".CarouselClass").css('width', "60%");
+		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
+		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
 	}else if (width<1200){
 		$(".CarouselClass").css('width', 400);
 		$(".CarouselClass").css('left', ((width*0.666)-400)/2);

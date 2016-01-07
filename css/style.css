@@ -136,13 +136,20 @@
 		margin-bottom: 75px;
 		width:60%;
 	}
-	#onasTab {
-		text-align: left;
+	#onasTab{
+		margin-top: 50px;
+	}
+
+	#kontaktTab{
+		margin-top: 50px;
 	}
 	#onasTab p {
-		width: 60%;
-		margin: auto;
+		width: 80%;
 		margin-top: 20px;
+	}
+	#kontaktTab p {
+		width: 80%;
+		margin-top:20px;
 	}
 	#zacetnaSlika{
 		margin-top: 75px;
