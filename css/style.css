@@ -47,9 +47,6 @@
 	font-weight: 300;
 	color: #92938F;
 }
-.content {
-	font-family: "Helvetica";
-}
 #slapnikTab{
 	/*Odkomentiraj spodnjo vrstico (display: block;), da bo izbran ta tab pri vstopu v stran in zakomentiraj vrstico display: none;*/
 	/*display: block;*/
@@ -63,9 +60,25 @@
 }
 #onasTab{
 	display: none;
+	font-family: 'Bodoni MT', Didot;
+	width: 80%;
+	font-size: 20px;
+	margin-top: 140px;
+}
+#onasTab p {
+	margin-top: 20px;
+	color: #6C6C69;
 }
 #kontaktTab{
 	display: none;
+	font-family: 'Bodoni MT', Didot;
+	font-size: 20px;
+	width: 80%;
+	margin-top: 140px;
+}
+#kontaktTab p {
+	margin-top: 20px;
+	color: #6C6C69;	
 }
 .CarouselClass{
 	width: 400px;
@@ -123,9 +136,18 @@
 		margin-bottom: 75px;
 		width:60%;
 	}
+	#onasTab {
+		text-align: left;
+	}
+	#onasTab p {
+		width: 60%;
+		margin: auto;
+		margin-top: 20px;
+	}
 	#zacetnaSlika{
 		margin-top: 75px;
 	}
+
 	.carousel-control.left{
 		display:block;
 		/*background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
