@@ -117,6 +117,7 @@
 	.navbar-toggle{
 		float: none;
 		margin: 0px;
+		margin-bottom: 0px;
 	}
 	.podatki{
 		margin-top: 20px;
@@ -132,7 +133,7 @@
 		text-align: left;
 	}
 	.CarouselClass{
-		margin-top: 20px;
+		margin-top: 0px;
 		margin-bottom: 75px;
 		width:60%;
 	}
