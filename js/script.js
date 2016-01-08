@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	var width = window.innerWidth;
+	var width = window.innerWidth
+	var zakleniHoverBool = false;
+	var refreshInterval;
 	if(width<768) {
 		$(".slapnikNav li a").click(function () {
 			if ($("#opisMobilnoEnatri").css('display') == "block") {
@@ -46,13 +48,15 @@ $(document).ready(function(){
 			var stevecHover=0;
 			$(".carousel-control.left").css("display", "block");
 			$(".carousel-control.right").css("display", "block");
-			var refreshInterval = setInterval(function(){
+			zakleniHoverBool=true;
+			refreshInterval = setInterval(function(){
 				if(stevecHover==0){
 					stevecHover=1;
 				}else if(stevecHover==1){
 					stevecHover=2;
 					$(".carousel-control.left").fadeToggle(400);
 					$(".carousel-control.right").fadeToggle(400);
+					zakleniHoverBool=false;
 				}else{
 					clearInterval(refreshInterval);
 				}
@@ -103,13 +107,15 @@ $(document).ready(function(){
 			var stevecHover=0;
 			$(".carousel-control.left").css("display", "block");
 			$(".carousel-control.right").css("display", "block");
-			var refreshInterval = setInterval(function(){
+			zakleniHoverBool=true;
+			refreshInterval = setInterval(function(){
 				if(stevecHover==0){
 					stevecHover=1;
 				}else if(stevecHover==1){
 					stevecHover=2;
 					$(".carousel-control.left").fadeToggle(400);
 					$(".carousel-control.right").fadeToggle(400);
+					zakleniHoverBool=false;
 				}else{
 					clearInterval(refreshInterval);
 				}
@@ -160,13 +166,15 @@ $(document).ready(function(){
 			var stevecHover=0;
 			$(".carousel-control.left").css("display", "block");
 			$(".carousel-control.right").css("display", "block");
-			var refreshInterval = setInterval(function(){
+			zakleniHoverBool=true;
+			refreshInterval = setInterval(function(){
 				if(stevecHover==0){
 					stevecHover=1;
 				}else if(stevecHover==1){
 					stevecHover=2;
 					$(".carousel-control.left").fadeToggle(400);
 					$(".carousel-control.right").fadeToggle(400);
+					zakleniHoverBool=false;
 				}else{
 					clearInterval(refreshInterval);
 				}
@@ -284,6 +292,22 @@ $(document).ready(function(){
 				}
 				$(".slapnikNav p").slideToggle(400);
 			}
+			var stevecHover=0;
+			$(".carousel-control.left").css("display", "block");
+			$(".carousel-control.right").css("display", "block");
+			zakleniHoverBool=true;
+			refreshInterval = setInterval(function(){
+				if(stevecHover==0){
+					stevecHover=1;
+				}else if(stevecHover==1){
+					stevecHover=2;
+					$(".carousel-control.left").fadeToggle(400);
+					$(".carousel-control.right").fadeToggle(400);
+					zakleniHoverBool=false;
+				}else{
+					clearInterval(refreshInterval);
+				}
+			}, 1500);
 		});
 		$(".enatriNav li a").click(function () {
 			if ($(".slapnikNav p").css('display') == "block") {
@@ -320,6 +344,22 @@ $(document).ready(function(){
 				}
 				$(".enatriNav p").slideToggle(400);
 			}
+			var stevecHover=0;
+			$(".carousel-control.left").css("display", "block");
+			$(".carousel-control.right").css("display", "block");
+			zakleniHoverBool=true;
+			refreshInterval = setInterval(function(){
+				if(stevecHover==0){
+					stevecHover=1;
+				}else if(stevecHover==1){
+					stevecHover=2;
+					$(".carousel-control.left").fadeToggle(400);
+					$(".carousel-control.right").fadeToggle(400);
+					zakleniHoverBool=false;
+				}else{
+					clearInterval(refreshInterval);
+				}
+			}, 1500);
 		});
 		$(".ullsNav li a").click(function () {
 			if ($(".enatriNav p").css('display') == "block") {
@@ -356,6 +396,22 @@ $(document).ready(function(){
 				}
 				$(".ullsNav p").slideToggle(400);
 			}
+			var stevecHover=0;
+			$(".carousel-control.left").css("display", "block");
+			$(".carousel-control.right").css("display", "block");
+			zakleniHoverBool=true;
+			refreshInterval = setInterval(function(){
+				if(stevecHover==0){
+					stevecHover=1;
+				}else if(stevecHover==1){
+					stevecHover=2;
+					$(".carousel-control.left").fadeToggle(400);
+					$(".carousel-control.right").fadeToggle(400);
+					zakleniHoverBool=false;
+				}else{
+					clearInterval(refreshInterval);
+				}
+			}, 1500);
 		});
 		$(".onasNav li a").click(function () {
 			if ($(".enatriNav p").css('display') == "block") {
@@ -440,8 +496,23 @@ $(document).ready(function(){
 		$(".navbar-content").slideToggle(400);
 	});
 	$(".CarouselClass").hover(function(){
-		$(".carousel-control.left").fadeToggle(400);
-		$(".carousel-control.right").fadeToggle(400);
+		if(!zakleniHoverBool){
+			$(".carousel-control.left").fadeIn(400);
+			$(".carousel-control.right").fadeIn(400);
+		}else{
+			clearInterval(refreshInterval);
+			$(".carousel-control.left").css("display", "block");
+			$(".carousel-control.right").css("display", "block");
+		}
+	}, function(){
+		if(!zakleniHoverBool){
+			$(".carousel-control.left").fadeOut(400);
+			$(".carousel-control.right").fadeOut(400);
+		}else{
+			clearInterval(refreshInterval);
+			$(".carousel-control.left").fadeOut(400);
+			$(".carousel-control.right").fadeOut(400);
+		}
 	});
 	$(".CarouselClass").swiperight(function() {
 		$(this).carousel('prev');
