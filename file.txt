@@ -1,3 +1,0 @@
-java.jpg
-droga.sng
-kakec.pref

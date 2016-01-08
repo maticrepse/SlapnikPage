@@ -549,19 +549,19 @@ $(document).ready(function(){
 		});
 	}
 	/*if(width<768){
-		var stevecHover=0;
-		var refreshInterval = setInterval(function(){
-			if(stevecHover==0){
-				stevecHover=1;
-			}else if(stevecHover==1){
-				stevecHover=2;
-				$(".carousel-control.left").fadeToggle(400);
-				$(".carousel-control.right").fadeToggle(400);
-			}else{
-				clearInterval(refreshInterval);
-			}
-		}, 1500);
-	}*/
+	 var stevecHover=0;
+	 var refreshInterval = setInterval(function(){
+	 if(stevecHover==0){
+	 stevecHover=1;
+	 }else if(stevecHover==1){
+	 stevecHover=2;
+	 $(".carousel-control.left").fadeToggle(400);
+	 $(".carousel-control.right").fadeToggle(400);
+	 }else{
+	 clearInterval(refreshInterval);
+	 }
+	 }, 1500);
+	 }*/
 	$(".navbar-toggle").click(function(){
 		$(".navbar-content").slideToggle(400);
 	});
@@ -629,80 +629,4 @@ $(window).resize(function(){
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
 	}
-});
-$(document).ready(function() {
-	$.post("images/enatri/enatri.txt", function(data) {
-		var imenaEnatri = data.split("\n");
-		//console.log(imenaEnatri);
-		for(var i in imenaEnatri){
-			if(imenaEnatri[i].substring((imenaEnatri[i].length-1)-3, imenaEnatri[i].length)==".jpg"){
-				//console.log(imenaEnatri[i].substring((imenaEnatri[i].length-1)-3, imenaEnatri[i].length));
-				//console.log(imenaEnatri[i]);
-				var aktiven="";
-				if(i==0){
-					aktiven=" active";
-				}
-				$("#enatriC").append('<div class="item'+aktiven+'"><img src="images/enatri/'+imenaEnatri[i]+'" alt="'+imenaEnatri[i].substring(0, imenaEnatri[i].length-4)+'"> </div>');
-			}
-		}
-	});
-	$.post("images/slapnik/slapnik.txt", function(data) {
-		var imenaSlapnik = data.split("\n");
-		//console.log(imenaSlapnik);
-		for(var i in imenaSlapnik){
-			if(imenaSlapnik[i].substring((imenaSlapnik[i].length-1)-3, imenaSlapnik[i].length)==".jpg"){
-				//console.log(imenaSlapnik[i].substring((imenaSlapnik[i].length-1)-3, imenaSlapnik[i].length));
-				//console.log(imenaSlapnik[i]);
-				var aktiven="";
-				if(i==0){
-					aktiven=" active";
-				}
-				$("#slapnikC").append('<div class="item'+aktiven+'"><img src="images/slapnik/'+imenaSlapnik[i]+'" alt="'+imenaSlapnik[i].substring(0, imenaSlapnik[i].length-3)+'"> </div>');
-			}
-		}
-	});
-	$.post("images/ulls/ulls.txt", function(data) {
-		var imenaUlls = data.split("\n");
-		//console.log(imenaUlls);
-		for(var i in imenaUlls){
-			if(imenaUlls[i].substring((imenaUlls[i].length-1)-3, imenaUlls[i].length)==".jpg"){
-				//console.log(imenaUlls[i].substring((imenaUlls[i].length-1)-3, imenaUlls[i].length));
-				//console.log(imenaUlls[i]);
-				var aktiven="";
-				if(i==0){
-					aktiven=" active";
-				}
-				$("#ullsC").append('<div class="item'+aktiven+'"><img src="images/ulls/'+imenaUlls[i]+'" alt="'+imenaUlls[i].substring(0, imenaUlls[i].length-3)+'"> </div>');
-			}
-		}
-	});
-	$.post("images/home/home.txt", function(data) {
-		var home = data.split("\n");
-		for(var i in home){
-			if(home[i].substring((home[i].length-1)-3, home[i].length)==".jpg"){
-				//console.log(home[i].substring((home[i].length-1)-3, home[i].length));
-				//console.log(home[i]);
-				$("#defaultTab").append('<img class="CarouselClass" src="images/home/'+home[i]+'" alt="'+home[i].substring(0, home[i].length-3)+'" id="zacetnaSlika">');
-			}
-		}
-		var width = window.innerWidth;
-		if(width<768){
-			//@media (max-width: 767px)
-			$(".navbar-toggle").css('left', width/2-22-15);
-			$(".CarouselClass").css('left', (width-(width*0.6))/2);
-			$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
-			$(".CarouselClass").css('width', "60%");
-			$("#onasTab").css('margin-left', (width-(width*0.6))/2);
-			$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
-		}else if (width<1200){
-			$(".CarouselClass").css('width', 400);
-			$(".CarouselClass").css('left', ((width*0.666)-400)/2);
-		}else if(width<1441){
-			$(".CarouselClass").css('width', 400);
-			$(".CarouselClass").css('left', ((width*0.75)-400)/2);
-		}else{
-			$(".CarouselClass").css('width', "37.037%");
-			$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
-		}
-	});
 });
