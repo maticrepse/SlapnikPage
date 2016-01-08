@@ -503,16 +503,11 @@ $(document).ready(function(){
 			clearInterval(refreshInterval);
 			$(".carousel-control.left").css("display", "block");
 			$(".carousel-control.right").css("display", "block");
+			zakleniHoverBool=false;
 		}
 	}, function(){
-		if(!zakleniHoverBool){
-			$(".carousel-control.left").fadeOut(400);
-			$(".carousel-control.right").fadeOut(400);
-		}else{
-			clearInterval(refreshInterval);
-			$(".carousel-control.left").fadeOut(400);
-			$(".carousel-control.right").fadeOut(400);
-		}
+		$(".carousel-control.left").fadeOut(400);
+		$(".carousel-control.right").fadeOut(400);
 	});
 	$(".CarouselClass").swiperight(function() {
 		$(this).carousel('prev');
