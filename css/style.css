@@ -104,7 +104,7 @@
 }
 @media (min-width: 1441px) {
 	.CarouselClass {
-		max-height: 800px;
+		max-height: 80px;
 	}
 }
 @media (max-width: 767px) {
