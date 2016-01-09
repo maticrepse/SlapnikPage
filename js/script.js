@@ -607,6 +607,7 @@ $(window).ready(function(){
 	}else{
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
+		$(".CarouselClass").css('max-height', "800px");
 	}
 });
 $(window).resize(function(){
@@ -628,5 +629,6 @@ $(window).resize(function(){
 	}else{
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
+		$(".CarouselClass").css('max-height', "800px");
 	}
 });
