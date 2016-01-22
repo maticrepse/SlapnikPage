@@ -632,7 +632,7 @@ $(window).resize(function(){
 });
 $(document).ready(function() {
 	$.ajax({
-		url: 'someScript.php',
+		url: 'vstaviSlike.php',
 		success: function(data) {
 			var posamezn = data.split("%iskalo%");
 			for (var i in posamezn) {
