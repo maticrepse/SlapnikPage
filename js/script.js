@@ -630,3 +630,89 @@ $(window).resize(function(){
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
 	}
 });
+$(document).ready(function() {
+	$.ajax({
+		url: 'someScript.php',
+		success: function(data) {
+			var posamezn = data.split("%iskalo%");
+			for (var i in posamezn) {
+				var drugaIteracija = posamezn[i].split(",");
+				var dolzina = drugaIteracija.length;
+				if(drugaIteracija[0]=="enatri"){
+					var stevec=0;
+					for (var j=1; j<dolzina-1; j++){
+						if(drugaIteracija[j]!="." && drugaIteracija[j]!=".."){
+							stevec++;
+							//console.log(drugaIteracija[j]);
+							var aktiven="";
+
+							if(stevec==1){
+								aktiven=" active";
+							}
+							//console.log('<div class="item'+aktiven+'"><img src="images/enatri/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-4)+'"> </div>');
+							$("#enatriC").append('<div class="item'+aktiven+'"><img src="images/enatri/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-4)+'"> </div>');
+
+						}
+					}
+				}else if(drugaIteracija[0]=="slapnik"){
+					var stevec=0;
+					for (var j=1; j<dolzina-1; j++){
+						if(drugaIteracija[j]!="." && drugaIteracija[j]!=".."){
+							stevec++;
+							//console.log(drugaIteracija[j]);
+							var aktiven="";
+
+							if(stevec==1){
+								aktiven=" active";
+							}
+							//console.log('<div class="item'+aktiven+'"><img src="images/slapnik/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-4)+'"> </div>');
+							$("#slapnikC").append('<div class="item'+aktiven+'"><img src="images/slapnik/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-4)+'"> </div>');
+						}
+					}
+				}else if(drugaIteracija[0]=="ulls"){
+					var stevec=0;
+					for (var j=1; j<dolzina-1; j++){
+						if(drugaIteracija[j]!="." && drugaIteracija[j]!=".."){
+							stevec++;
+							//console.log(drugaIteracija[j]);
+							var aktiven="";
+
+							if(stevec==1){
+								aktiven=" active";
+							}
+							//console.log('<div class="item'+aktiven+'"><img src="images/ulls/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-4)+'"> </div>');
+							$("#ullsC").append('<div class="item'+aktiven+'"><img src="images/ulls/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-4)+'"> </div>');
+						}
+					}
+				}else if(drugaIteracija[0]=="home"){
+					for (var j=1; j<dolzina-1; j++){
+						if(drugaIteracija[j]!="." && drugaIteracija[j]!=".."){
+							//console.log(drugaIteracija[j]);
+							//console.log('<img class="CarouselClass" src="images/home/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-3)+'" id="zacetnaSlika">');
+							$("#defaultTab").append('<img class="CarouselClass" src="images/home/'+drugaIteracija[j]+'" alt="'+drugaIteracija[j].substring(0, drugaIteracija[j].length-3)+'" id="zacetnaSlika">');
+						}
+					}
+				}
+			}
+			var width = window.innerWidth;
+			if(width<768){
+				//@media (max-width: 767px)
+				$(".navbar-toggle").css('left', width/2-22-15);
+				$(".CarouselClass").css('left', (width-(width*0.6))/2);
+				$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
+				$(".CarouselClass").css('width', "60%");
+				$("#onasTab").css('margin-left', (width-(width*0.6))/2);
+				$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
+			}else if (width<1200){
+				$(".CarouselClass").css('width', 400);
+				$(".CarouselClass").css('left', ((width*0.666)-400)/2);
+			}else if(width<1441){
+				$(".CarouselClass").css('width', 400);
+				$(".CarouselClass").css('left', ((width*0.75)-400)/2);
+			}else{
+				$(".CarouselClass").css('width', "37.037%");
+				$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
+			}
+		}
+	});
+});
