@@ -629,7 +629,7 @@ $(window).resize(function(){
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
 	}
-});
+});/*
 $(document).ready(function() {
 	$.ajax({
 		url: 'vstaviSlike.php',
@@ -715,4 +715,4 @@ $(document).ready(function() {
 			}
 		}
 	});
-});
+});*/
