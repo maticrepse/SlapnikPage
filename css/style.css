@@ -1,12 +1,14 @@
 .navigation {
+	text-align: right;
 	font-family: 'Bodoni MT', Didot;
+	margin-left: 25px;
 	/*font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;*/
 }
 .navigation h1 {
 	margin-top: 25px;
 	margin-left: 25px;
-	font-size: 40px;
-	color: #6C6C69;
+	font-size: 80px;
+	color: #828181;
 }
 .navigation ul {
 	padding: 0px;
@@ -14,20 +16,20 @@
 	list-style: none;
 }
 .kolekcije{
-	margin-top: 70px;
-	font-size: 20px;
+	margin-top: 50px;
+	font-size: 55px;
 	color: #8C8D89;
 }
 .podatki{
 	margin-top: 50px;
-	font-size: 17px;
+	font-size: 34px;
 	color: #92938F;
 }
 .kolekcije a{
-	color: #8C8D89;
+	color: #A2A2A2;
 }
 .podatki a{
-	color: #92938F;
+	color: #C1C0C0;
 }
 .navigation li {
 	padding: 0px;
@@ -42,10 +44,11 @@
 	color: gray;
 }
 .navigation p {
-	margin-left: 50px;
-	font-size: 70%;
+	text-align: left;
+	margin-left: 0px;
+	font-size: 50%;
 	font-weight: 300;
-	color: #92938F;
+	color: #828181;
 }
 #slapnikTab{
 	/*Odkomentiraj spodnjo vrstico (display: block;), da bo izbran ta tab pri vstopu v stran in zakomentiraj vrstico display: none;*/
@@ -81,9 +84,9 @@
 	color: #6C6C69;	
 }
 .CarouselClass{
-	width: 400px;
+	width: 450px;
 	position: absolute;
-	margin-top: 75px;
+	margin-top: 30px;
 	margin-bottom: 75px;
 }
 .carousel-control.left{

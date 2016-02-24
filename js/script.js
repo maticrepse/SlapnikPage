@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var refreshInterval;
 	if(width<768) {
 		$(".slapnikNav li a").click(function () {
-			$(".slapnikNav").css("font-weight", "bold");
+			//$(".slapnikNav").css("font-weight", "bold");
 			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#slapnikTab").fadeToggle(400);
@@ -12,7 +12,7 @@ $(document).ready(function(){
 				});
 				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
-				$(".enatriNav").css("font-weight", "normal");
+				//$(".enatriNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#slapnikTab").fadeToggle(400);
@@ -20,21 +20,21 @@ $(document).ready(function(){
 				});
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
-				$(".ullsNav").css("font-weight", "normal");
+				//$(".ullsNav").css("font-weight", "normal");
 			} else if ($("#onasTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#slapnikTab").fadeToggle(400);
 					$("#opisMobilnoSlapnik").slideToggle(400);
 				});
 				$("#onasTab").fadeToggle(400);
-				$(".onasNav").css("font-weight", "normal");
+				//$(".onasNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#slapnikTab").fadeToggle(400);
 					$("#opisMobilnoSlapnik").slideToggle(400);
 				});
 				$("#kontaktTab").fadeToggle(400);
-				$(".kontaktNav").css("font-weight", "normal");
+				//$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($("#opisMobilnoSlapnik").css('display') == "block") {
 					$(".navbar-content").slideToggle(400, function(){
@@ -42,14 +42,14 @@ $(document).ready(function(){
 					});
 					$("#opisMobilnoSlapnik").slideToggle(400);
 					$("#slapnikTab").fadeToggle(400);
-					$(".slapnikNav").css("font-weight", "normal");
+					//$(".slapnikNav").css("font-weight", "normal");
 				} else {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#opisMobilnoSlapnik").slideToggle(400);
 						$("#slapnikTab").fadeToggle(400);
 					});
 					$("#defaultTab").fadeToggle(400);
-					$(".slapnikNav").css("font-weight", "bold");
+					//$(".slapnikNav").css("font-weight", "bold");
 				}
 			}
 			var stevecHover=0;
@@ -70,7 +70,7 @@ $(document).ready(function(){
 			}, 1500);
 		});
 		$(".enatriNav li a").click(function () {
-			$(".enatriNav").css("font-weight", "bold");
+			//$(".enatriNav").css("font-weight", "bold");
 			if ($("#opisMobilnoSlapnik").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#enatriTab").fadeToggle(400);
@@ -78,7 +78,7 @@ $(document).ready(function(){
 				});
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
-				$(".slapnikNav").css("font-weight", "normal");
+				//$(".slapnikNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#enatriTab").fadeToggle(400);
@@ -86,21 +86,21 @@ $(document).ready(function(){
 				});
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
-				$(".ullsNav").css("font-weight", "normal");
+				//$(".ullsNav").css("font-weight", "normal");
 			} else if ($("#onasTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#enatriTab").fadeToggle(400);
 					$("#opisMobilnoEnatri").slideToggle(400);
 				});
 				$("#onasTab").fadeToggle(400);
-				$(".onasNav").css("font-weight", "normal");
+				//$(".onasNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#enatriTab").fadeToggle(400);
 					$("#opisMobilnoEnatri").slideToggle(400);
 				});
 				$("#kontaktTab").fadeToggle(400);
-				$(".kontaktNav").css("font-weight", "normal");
+				//$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($("#opisMobilnoEnatri").css('display') == "block") {
 					$(".navbar-content").slideToggle(400, function(){
@@ -108,14 +108,14 @@ $(document).ready(function(){
 					});
 					$("#opisMobilnoEnatri").slideToggle(400);
 					$("#enatriTab").fadeToggle(400);
-					$(".enatriNav").css("font-weight", "normal");
+					//$(".enatriNav").css("font-weight", "normal");
 				} else {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#opisMobilnoEnatri").slideToggle(400);
 						$("#enatriTab").fadeToggle(400);
 					});
 					$("#defaultTab").fadeToggle(400);
-					$(".enatriNav").css("font-weight", "bold");
+					//$(".enatriNav").css("font-weight", "bold");
 				}
 			}
 			var stevecHover=0;
@@ -136,7 +136,7 @@ $(document).ready(function(){
 			}, 1500);
 		});
 		$(".ullsNav li a").click(function () {
-			$(".ullsNav").css("font-weight", "bold");
+			//$(".ullsNav").css("font-weight", "bold");
 			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#ullsTab").fadeToggle(400);
@@ -144,7 +144,7 @@ $(document).ready(function(){
 				});
 				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
-				$(".enatriNav").css("font-weight", "normal");
+				//$(".enatriNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#ullsTab").fadeToggle(400);
@@ -152,21 +152,21 @@ $(document).ready(function(){
 				});
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
-				$(".slapnikNav").css("font-weight", "normal");
+				//$(".slapnikNav").css("font-weight", "normal");
 			} else if ($("#onasTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#ullsTab").fadeToggle(400);
 					$("#opisMobilnoUlls").slideToggle(400);
 				});
 				$("#onasTab").fadeToggle(400);
-				$(".onasNav").css("font-weight", "normal");
+				//$(".onasNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#ullsTab").fadeToggle(400);
 					$("#opisMobilnoUlls").slideToggle(400);
 				});
 				$("#kontaktTab").fadeToggle(400);
-				$(".kontaktNav").css("font-weight", "normal");
+				//$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($("#opisMobilnoUlls").css('display') == "block") {
 					$(".navbar-content").slideToggle(400, function(){
@@ -174,14 +174,14 @@ $(document).ready(function(){
 					});
 					$("#opisMobilnoUlls").slideToggle(400);
 					$("#ullsTab").fadeToggle(400);
-					$(".ullsNav").css("font-weight", "normal");
+					//$(".ullsNav").css("font-weight", "normal");
 				} else {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#opisMobilnoUlls").slideToggle(400);
 						$("#ullsTab").fadeToggle(400);
 					});
 					$("#defaultTab").fadeToggle(400);
-					$(".ullsNav").css("font-weight", "bold");
+					//$(".ullsNav").css("font-weight", "bold");
 				}
 			}
 			var stevecHover=0;
@@ -202,135 +202,137 @@ $(document).ready(function(){
 			}, 1500);
 		});
 		$(".onasNav li a").click(function () {
-			$(".onasNav").css("font-weight", "bold");
+			//$(".onasNav").css("font-weight", "bold");
 			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
 				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
-				$(".enatriNav").css("font-weight", "normal");
+				//$(".enatriNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
-				$(".ullsNav").css("font-weight", "normal");
+				//$(".ullsNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
-				$(".slapnikNav").css("font-weight", "normal");
+				//$(".slapnikNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#onasTab").fadeToggle(400);
 				});
 				$("#kontaktTab").fadeToggle(400);
-				$(".kontaktNav").css("font-weight", "normal");
+				//$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($("#onasTab").css('display') == "block") {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#defaultTab").fadeToggle(400);
 					});
 					$("#onasTab").fadeToggle(400);
-					$(".onasNav").css("font-weight", "normal");
+					//$(".onasNav").css("font-weight", "normal");
 				} else {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#onasTab").fadeToggle(400);
 					});
 					$("#defaultTab").fadeToggle(400);
-					$(".ullsNav").css("font-weight", "bold");
+					//$(".ullsNav").css("font-weight", "bold");
 				}
 			}
 		});
 		$(".kontaktNav li a").click(function () {
-			$(".kontaktNav").css("font-weight", "bold");
+			//$(".kontaktNav").css("font-weight", "bold");
 			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
 				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
-				$(".enatriNav").css("font-weight", "normal");
+				//$(".enatriNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
-				$(".ullsNav").css("font-weight", "normal");
+				//$(".ullsNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
-				$(".slapnikNav").css("font-weight", "normal");
+				//$(".slapnikNav").css("font-weight", "normal");
 			} else if ($("#onasTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
 				$("#onasTab").fadeToggle(400);
-				$(".onasNav").css("font-weight", "normal");
+				//$(".onasNav").css("font-weight", "normal");
 			} else {
 				if ($("#kontaktTab").css('display') == "block") {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#defaultTab").fadeToggle(400);
 					});
 					$("#kontaktTab").fadeToggle(400);
-					$(".kontaktNav").css("font-weight", "normal");
+					//$(".kontaktNav").css("font-weight", "normal");
 				} else {
 					$(".navbar-content").slideToggle(400, function(){
 						$("#kontaktTab").fadeToggle(400);
 					});
 					$("#defaultTab").fadeToggle(400);
-					$(".kontaktNav").css("font-weight", "bold");
+					//$(".kontaktNav").css("font-weight", "bold");
 				}
 			}
 		});
 	}else{
 		$(".slapnikNav li a").click(function () {
-			$(".slapnikNav").css("font-weight", "bold");
+			//$(".slapnikNav").css("font-weight", "bold");
 			if ($(".enatriNav p").css('display') == "block") {
 				$("#enatriTab").fadeToggle(400);
 				$(".enatriNav p").slideToggle(400, function () {
 					$("#slapnikTab").fadeToggle(400);
 					$(".slapnikNav p").slideToggle(400);
 				});
-				$(".enatriNav").css("font-weight", "normal");
+			//	$(".enatriNav").css("font-weight", "normal");
 			} else if ($(".ullsNav p").css('display') == "block") {
 				$("#ullsTab").fadeToggle(400);
 				$(".ullsNav p").slideToggle(400, function () {
 					$("#slapnikTab").fadeToggle(400);
 					$(".slapnikNav p").slideToggle(400);
 				});
-				$(".ullsNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
-				$("#onasTab").fadeToggle(400, function () {
+			//	$(".ullsNav").css("font-weight", "normal");
+			} else if ($(".onasNav p").css('display') == "block") {
+				$("#defaultTab").fadeToggle(400)
+				$(".onasNav p").slideToggle(400, function () {
 					$("#slapnikTab").fadeToggle(400);
 					$(".slapnikNav p").slideToggle(400);
 				});
-				$(".onasNav").css("font-weight", "normal");
-			} else if ($("#kontaktTab").css('display') == "block") {
-				$("#kontaktTab").fadeToggle(400, function () {
+			//	$(".onasNav").css("font-weight", "normal");
+			} else if ($(".kontaktNav p").css('display') == "block") {
+				$("#defaultTab").fadeToggle(400)
+				$(".kontaktNav p").slideToggle(400, function () {
 					$("#slapnikTab").fadeToggle(400);
 					$(".slapnikNav p").slideToggle(400);
 				});
-				$(".kontaktNav").css("font-weight", "normal");
+			//	$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($(".slapnikNav p").css('display') == "block") {
 					$("#slapnikTab").fadeToggle(400, function () {
 						$("#defaultTab").fadeToggle(400);
 					});
-					$(".slapnikNav").css("font-weight", "normal");
+			//		$(".slapnikNav").css("font-weight", "normal");
 				} else {
 					$("#defaultTab").fadeToggle(400, function () {
 						$("#slapnikTab").fadeToggle(400);
 					});
-					$(".slapnikNav").css("font-weight", "bold");
+			//		$(".slapnikNav").css("font-weight", "bold");
 				}
 				$(".slapnikNav p").slideToggle(400);
 			}
@@ -352,44 +354,46 @@ $(document).ready(function(){
 			}, 1500);
 		});
 		$(".enatriNav li a").click(function () {
-			$(".enatriNav").css("font-weight", "bold");
+			//$(".enatriNav").css("font-weight", "bold");
 			if ($(".slapnikNav p").css('display') == "block") {
 				$("#slapnikTab").fadeToggle(400);
 				$(".slapnikNav p").slideToggle(400, function () {
 					$("#enatriTab").fadeToggle(400);
 					$(".enatriNav p").slideToggle(400);
 				});
-				$(".slapnikNav").css("font-weight", "normal");
+			//	$(".slapnikNav").css("font-weight", "normal");
 			} else if ($(".ullsNav p").css('display') == "block") {
 				$("#ullsTab").fadeToggle(400);
 				$(".ullsNav p").slideToggle(400, function () {
 					$("#enatriTab").fadeToggle(400);
 					$(".enatriNav p").slideToggle(400);
 				});
-				$(".ullsNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
-				$("#onasTab").fadeToggle(400, function () {
+			//	$(".ullsNav").css("font-weight", "normal");
+			} else if ($(".onasNav p").css('display') == "block") {
+				$("#defaultTab").fadeToggle(400)
+				$(".onasNav p").slideToggle(400, function () {
 					$("#enatriTab").fadeToggle(400);
 					$(".enatriNav p").slideToggle(400);
 				});
-				$(".onasNav").css("font-weight", "normal");
-			} else if ($("#kontaktTab").css('display') == "block") {
-				$("#kontaktTab").fadeToggle(400, function () {
+			//	$(".onasNav").css("font-weight", "normal");
+			} else if ($(".kontaktNav p").css('display') == "block") {
+				$("#defaultTab").fadeToggle(400)
+				$(".kontaktNav p").slideToggle(400, function () {
 					$("#enatriTab").fadeToggle(400);
 					$(".enatriNav p").slideToggle(400);
 				});
-				$(".kontaktNav").css("font-weight", "normal");
+			//	$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($(".enatriNav p").css('display') == "block") {
 					$("#enatriTab").fadeToggle(400, function () {
 						$("#defaultTab").fadeToggle(400);
 					});
-					$(".enatriNav").css("font-weight", "normal");
+			//		$(".enatriNav").css("font-weight", "normal");
 				} else {
 					$("#defaultTab").fadeToggle(400, function () {
 						$("#enatriTab").fadeToggle(400);
 					});
-					$(".enatriNav").css("font-weight", "bold");
+			//		$(".enatriNav").css("font-weight", "bold");
 				}
 				$(".enatriNav p").slideToggle(400);
 			}
@@ -411,44 +415,46 @@ $(document).ready(function(){
 			}, 1500);
 		});
 		$(".ullsNav li a").click(function () {
-			$(".ullsNav").css("font-weight", "bold");
+			//$(".ullsNav").css("font-weight", "bold");
 			if ($(".enatriNav p").css('display') == "block") {
 				$("#enatriTab").fadeToggle(400);
 				$(".enatriNav p").slideToggle(400, function () {
 					$("#ullsTab").fadeToggle(400);
 					$(".ullsNav p").slideToggle(400);
 				});
-				$(".enatriNav").css("font-weight", "normal");
+			//	$(".enatriNav").css("font-weight", "normal");
 			} else if ($(".slapnikNav p").css('display') == "block") {
 				$("#slapnikTab").fadeToggle(400);
 				$(".slapnikNav p").slideToggle(400, function () {
 					$("#ullsTab").fadeToggle(400);
 					$(".ullsNav p").slideToggle(400);
 				});
-				$(".slapnikNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
-				$("#onasTab").fadeToggle(400, function () {
+			//	$(".slapnikNav").css("font-weight", "normal");
+			} else if ($(".onasNav p").css('display') == "block") {
+				$("#defaultTab").fadeToggle(400)
+				$(".onasNav p").slideToggle(400, function () {
 					$("#ullsTab").fadeToggle(400);
 					$(".ullsNav p").slideToggle(400);
 				});
-				$(".onasNav").css("font-weight", "normal");
-			} else if ($("#kontaktTab").css('display') == "block") {
-				$("#kontaktTab").fadeToggle(400, function () {
+			//	$(".onasNav").css("font-weight", "normal");
+			} else if ($(".kontaktNav p").css('display') == "block") {
+				$("#defaultTab").fadeToggle(400)
+				$(".kontaktNav p").slideToggle(400, function () {
 					$("#ullsTab").fadeToggle(400);
 					$(".ullsNav p").slideToggle(400);
 				});
-				$(".kontaktNav").css("font-weight", "normal");
+			//	$(".kontaktNav").css("font-weight", "normal");
 			} else {
 				if ($(".ullsNav p").css('display') == "block") {
 					$("#ullsTab").fadeToggle(400, function () {
 						$("#defaultTab").fadeToggle(400);
 					});
-					$(".ullsNav").css("font-weight", "normal");
+			//		$(".ullsNav").css("font-weight", "normal");
 				} else {
 					$("#defaultTab").fadeToggle(400, function () {
 						$("#ullsTab").fadeToggle(400);
 					});
-					$(".ullsNav").css("font-weight", "bold");
+			//		$(".ullsNav").css("font-weight", "bold");
 				}
 				$(".ullsNav p").slideToggle(400);
 			}
@@ -470,80 +476,78 @@ $(document).ready(function(){
 			}, 1500);
 		});
 		$(".onasNav li a").click(function () {
-			$(".onasNav").css("font-weight", "bold");
+			//$(".onasNav").css("font-weight", "bold");
 			if ($(".enatriNav p").css('display') == "block") {
 				$("#enatriTab").fadeToggle(400);
 				$(".enatriNav p").slideToggle(400, function () {
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$(".onasNav p").slideToggle(400);
 				});
-				$(".enatriNav").css("font-weight", "bold");
+			//	$(".enatriNav").css("font-weight", "bold");
 			} else if ($(".ullsNav p").css('display') == "block") {
 				$("#ullsTab").fadeToggle(400);
 				$(".ullsNav p").slideToggle(400, function () {
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$(".onasNav p").slideToggle(400);
 				});
-				$(".ullsNav").css("font-weight", "normal");
+			//	$(".ullsNav").css("font-weight", "normal");
 			} else if ($(".slapnikNav p").css('display') == "block") {
 				$("#slapnikTab").fadeToggle(400);
 				$(".slapnikNav p").slideToggle(400, function () {
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$(".onasNav p").slideToggle(400);
 				});
-				$(".slapnikNav").css("font-weight", "normal");
-			} else if ($("#kontaktTab").css('display') == "block") {
-				$("#kontaktTab").fadeToggle(400, function () {
-					$("#onasTab").fadeToggle(400);
+			//	$(".slapnikNav").css("font-weight", "normal");
+			} else if ($(".kontaktNav p").css('display') == "block") {
+				$(".kontaktNav p").slideToggle(400, function () {
+					$(".onasNav p").slideToggle(400);
 				});
-				$(".kontaktNav").css("font-weight", "normal");
+			//	$(".kontaktNav").css("font-weight", "normal");
 			} else {
-				if ($("#onasTab").css('display') == "block") {
-					$("#onasTab").fadeToggle(400, function () {
-						$("#defaultTab").fadeToggle(400);
-					});
-					$(".onasNav").css("font-weight", "normal");
+				if ($(".onasNav p").css('display') == "block") {
+					$(".onasNav p").slideToggle(400);
+			//		$(".onasNav").css("font-weight", "normal");
 				} else {
-					$("#defaultTab").fadeToggle(400, function () {
-						$("#onasTab").fadeToggle(400);
-					});
-					$(".onasNav").css("font-weight", "bold");
+					$(".onasNav p").slideToggle(400);
+			//		$(".onasNav").css("font-weight", "bold");
 				}
 			}
 		});
 		$(".kontaktNav li a").click(function () {
-			$(".kontaktNav").css("font-weight", "bold");
+			//$(".kontaktNav").css("font-weight", "bold");
 			if ($(".enatriNav p").css('display') == "block") {
 				$("#enatriTab").fadeToggle(400);
 				$(".enatriNav p").slideToggle(400, function () {
-					$("#kontaktTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$(".kontaktNav p").slideToggle(400);
 				});
-				$(".enatriNav").css("font-weight", "normal");
+			//	$(".enatriNav").css("font-weight", "normal");
 			} else if ($(".ullsNav p").css('display') == "block") {
 				$("#ullsTab").fadeToggle(400);
 				$(".ullsNav p").slideToggle(400, function () {
-					$("#kontaktTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$(".kontaktNav p").slideToggle(400);
 				});
-				$(".ullsNav").css("font-weight", "normal");
+			//	$(".ullsNav").css("font-weight", "normal");
 			} else if ($(".slapnikNav p").css('display') == "block") {
 				$("#slapnikTab").fadeToggle(400);
 				$(".slapnikNav p").slideToggle(400, function () {
-					$("#kontaktTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$(".kontaktNav p").slideToggle(400);
 				});
-				$(".slapnikNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
-				$("#onasTab").fadeToggle(400, function () {
-					$("#kontaktTab").fadeToggle(400);
+			//	$(".slapnikNav").css("font-weight", "normal");
+			} else if ($(".onasNav p").css('display') == "block") {
+				$(".onasNav p").slideToggle(400, function () {
+					$(".kontaktNav p").slideToggle(400);
 				});
-				$(".onasNav").css("font-weight", "normal");
+			//	$(".onasNav").css("font-weight", "normal");
 			} else {
-				if ($("#kontaktTab").css('display') == "block") {
-					$("#kontaktTab").fadeToggle(400, function () {
-						$("#defaultTab").fadeToggle(400);
-					});
-					$(".kontaktNav").css("font-weight", "normal");
+				if ($(".kontaktNav p").css('display') == "block") {
+					$(".kontaktNav p").slideToggle(400);
+			//		$(".kontaktNav").css("font-weight", "normal");
 				} else {
-					$("#defaultTab").fadeToggle(400, function () {
-						$("#kontaktTab").fadeToggle(400);
-					});
-					$(".kontaktNav").css("font-weight", "bold");
+					$(".kontaktNav p").slideToggle(400);
+			//		$(".kontaktNav").css("font-weight", "bold");
 				}
 			}
 		});
@@ -590,6 +594,8 @@ $(document).ready(function(){
 });
 $(window).ready(function(){
 	var width = window.innerWidth;
+	var stoPosto=1440;
+	var faktor=width/stoPosto;
 	if(width<768){
 		//@media (max-width: 767px)
 		$(".navbar-toggle").css('left', width/2-22-15);
@@ -598,12 +604,10 @@ $(window).ready(function(){
 		$(".CarouselClass").css('width', "60%");
 		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
 		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
-	}else if (width<1200){
-		$(".CarouselClass").css('width', 400);
-		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
 	}else if(width<1441){
-		$(".CarouselClass").css('width', 400);
-		$(".CarouselClass").css('left', ((width*0.75)-400)/2);
+		$(".navigation h1").css('font-size', 80*faktor);
+		$(".CarouselClass").css('width', 450);
+		$(".CarouselClass").css('left', ((width*0.666)-450)/2);
 	}else{
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
@@ -611,6 +615,8 @@ $(window).ready(function(){
 });
 $(window).resize(function(){
 	var width = window.innerWidth;
+	var stoPosto=1440;
+	var faktor=width/stoPosto;
 	if(width<768){
 		//@media (max-width: 767px)
 		$(".navbar-toggle").css('left', width/2-22-15);
@@ -619,12 +625,10 @@ $(window).resize(function(){
 		$(".CarouselClass").css('width', "60%");
 		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
 		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
-	}else if (width<1200){
-		$(".CarouselClass").css('width', 400);
-		$(".CarouselClass").css('left', ((width*0.666)-400)/2);
 	}else if(width<1441){
-		$(".CarouselClass").css('width', 400);
-		$(".CarouselClass").css('left', ((width*0.75)-400)/2);
+		$(".navigation h1").css('font-size', 80*faktor);
+		$(".CarouselClass").css('width', 450);
+		$(".CarouselClass").css('left', ((width*0.666)-450)/2);
 	}else{
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
