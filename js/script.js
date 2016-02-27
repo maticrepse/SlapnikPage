@@ -592,7 +592,7 @@ $(document).ready(function(){
 		//$(this).css('margin-bottom', 75);
 	});
 });
-$(window).ready(function(){
+$(document).ready(function(){
 	var width = window.innerWidth;
 	var stoPosto=1440;
 	var faktor=width/stoPosto;
