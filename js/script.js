@@ -644,7 +644,7 @@ $(window).resize(function(){
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}else {
-		//console.log($(".navigation").css("width"));
+		console.log($(".navigation").css("width"));
 		/*$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);*/
 		$(".navigation ul").css('margin-left', $(".navigation").css("width")-425);
