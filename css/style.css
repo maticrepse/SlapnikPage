@@ -15,6 +15,9 @@
 	margin-left: 25px;
 	list-style: none;
 }
+.podatki p{
+	text-align: left;
+}
 .kolekcije{
 	margin-top: 50px;
 	font-size: 55px;
@@ -44,7 +47,6 @@
 	color: gray;
 }
 .navigation p {
-	text-align: left;
 	margin-left: 0px;
 	font-size: 50%;
 	font-weight: 300;
@@ -194,3 +196,4 @@
 	width:40%;
 	margin-top: 20px;
 }
+/*fade fade fade*/
