@@ -14,18 +14,19 @@
 }
 .navigation ul {
 	padding: 0px;
-	margin-left: 25px;
+	margin-left: 0px;
 	list-style: none;
+	max-width: 425px;
 }
 .kolekcije{
-	margin-top: 50px;
+	margin-top: 75px;
 	font-size: 55px;
 	color: #8C8D89;
 	-webkit-transform: scale(0.9,1.25);
 	transform: scale(0.9,1.25);
 }
 .podatki{
-	margin-top: 50px;
+	margin-top: 75px;
 	font-size: 34px;
 	color: #92938F;
 	-webkit-transform: scale(0.9,1.25);
@@ -87,7 +88,7 @@
 	font-family: 'Bodoni MT', Didot;
 	font-size: 20px;
 	width: 80%;
-	margin-top: 177px;
+	margin-top: 236px;
 	-webkit-transform: scale(0.9,1.25);
 	transform: scale(0.9,1.25);
 	/*margin-left: 50px;*/

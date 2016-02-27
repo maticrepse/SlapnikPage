@@ -610,7 +610,7 @@ $(document).ready(function(){
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
-		$("#kontaktTab").css("margin-top", 177*faktor);
+		$("#kontaktTab").css("margin-top", 236*faktor);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}else {
@@ -638,7 +638,7 @@ $(window).resize(function(){
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
-		$("#kontaktTab").css("margin-top", 177*faktor);
+		$("#kontaktTab").css("margin-top", 236*faktor);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}else {
