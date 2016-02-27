@@ -1,9 +1,4 @@
 $(document).ready(function(){
-
-	$(".carousel-control.right").click(function(){
-		$(".item.active").fadeToggle(400).next().fadeToggle(400);
-		//$(".item.active").next().;
-	});
 	var width = window.innerWidth
 	var zakleniHoverBool = false;
 	var refreshInterval;
@@ -320,9 +315,8 @@ $(document).ready(function(){
 					$(".slapnikNav p").slideToggle(400);
 				});
 			//	$(".onasNav").css("font-weight", "normal");
-			} else if ($(".kontaktNav p").css('display') == "block") {
-				$("#defaultTab").fadeToggle(400)
-				$(".kontaktNav p").slideToggle(400, function () {
+			} else if ($("#kontaktTab").css('display') == "block") {
+				$("#kontaktTab").fadeToggle(400, function () {
 					$("#slapnikTab").fadeToggle(400);
 					$(".slapnikNav p").slideToggle(400);
 				});
@@ -381,9 +375,8 @@ $(document).ready(function(){
 					$(".enatriNav p").slideToggle(400);
 				});
 			//	$(".onasNav").css("font-weight", "normal");
-			} else if ($(".kontaktNav p").css('display') == "block") {
-				$("#defaultTab").fadeToggle(400)
-				$(".kontaktNav p").slideToggle(400, function () {
+			} else if ($("#kontaktTab").css('display') == "block") {
+				$("#kontaktTab").fadeToggle(400, function () {
 					$("#enatriTab").fadeToggle(400);
 					$(".enatriNav p").slideToggle(400);
 				});
@@ -442,9 +435,8 @@ $(document).ready(function(){
 					$(".ullsNav p").slideToggle(400);
 				});
 			//	$(".onasNav").css("font-weight", "normal");
-			} else if ($(".kontaktNav p").css('display') == "block") {
-				$("#defaultTab").fadeToggle(400)
-				$(".kontaktNav p").slideToggle(400, function () {
+			} else if ($("#kontaktTab").css('display') == "block") {
+				$("#kontaktTab").fadeToggle(400, function () {
 					$("#ullsTab").fadeToggle(400);
 					$(".ullsNav p").slideToggle(400);
 				});
@@ -503,8 +495,9 @@ $(document).ready(function(){
 					$(".onasNav p").slideToggle(400);
 				});
 			//	$(".slapnikNav").css("font-weight", "normal");
-			} else if ($(".kontaktNav p").css('display') == "block") {
-				$(".kontaktNav p").slideToggle(400, function () {
+			} else if ($("#kontaktTab").css('display') == "block") {
+				$("#kontaktTab").fadeToggle(400, function () {
+					$("#defaultTab").fadeToggle(400);
 					$(".onasNav p").slideToggle(400);
 				});
 			//	$(".kontaktNav").css("font-weight", "normal");
@@ -523,35 +516,37 @@ $(document).ready(function(){
 			if ($(".enatriNav p").css('display') == "block") {
 				$("#enatriTab").fadeToggle(400);
 				$(".enatriNav p").slideToggle(400, function () {
-					$("#defaultTab").fadeToggle(400);
-					$(".kontaktNav p").slideToggle(400);
+					$("#kontaktTab").fadeToggle(400);
 				});
 			//	$(".enatriNav").css("font-weight", "normal");
 			} else if ($(".ullsNav p").css('display') == "block") {
 				$("#ullsTab").fadeToggle(400);
 				$(".ullsNav p").slideToggle(400, function () {
-					$("#defaultTab").fadeToggle(400);
-					$(".kontaktNav p").slideToggle(400);
+					$("#kontaktTab").fadeToggle(400);
 				});
 			//	$(".ullsNav").css("font-weight", "normal");
 			} else if ($(".slapnikNav p").css('display') == "block") {
 				$("#slapnikTab").fadeToggle(400);
 				$(".slapnikNav p").slideToggle(400, function () {
-					$("#defaultTab").fadeToggle(400);
-					$(".kontaktNav p").slideToggle(400);
+					$("#kontaktTab").fadeToggle(400);
 				});
 			//	$(".slapnikNav").css("font-weight", "normal");
 			} else if ($(".onasNav p").css('display') == "block") {
-				$(".onasNav p").slideToggle(400, function () {
-					$(".kontaktNav p").slideToggle(400);
+				$(".onasNav p").slideToggle(400);
+				$("#defaultTab").fadeToggle(400, function () {
+					$("#kontaktTab").fadeToggle(400);
 				});
 			//	$(".onasNav").css("font-weight", "normal");
 			} else {
-				if ($(".kontaktNav p").css('display') == "block") {
-					$(".kontaktNav p").slideToggle(400);
+				if ($("#kontaktTab").css('display') == "block") {
+					$("#kontaktTab").fadeToggle(400, function(){
+						$("#defaultTab").fadeToggle(400);
+					});
 			//		$(".kontaktNav").css("font-weight", "normal");
 				} else {
-					$(".kontaktNav p").slideToggle(400);
+					$("#defaultTab").fadeToggle(400, function(){
+						$("#kontaktTab").fadeToggle(400);
+					});
 			//		$(".kontaktNav").css("font-weight", "bold");
 				}
 			}
