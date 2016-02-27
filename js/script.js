@@ -594,6 +594,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
 	var widthFotr = $(".navigation").css("width");
+	widthFotr = widthFotr.substring(0,widthFotr.length-2);
 	var width = window.innerWidth;
 	var stoPosto=1440;
 	var faktor=width/stoPosto;
@@ -625,6 +626,7 @@ $(document).ready(function(){
 });
 $(window).resize(function(){
 	var widthFotr = $(".navigation").css("width");
+	widthFotr = widthFotr.substring(0,widthFotr.length-2);
 	var width = window.innerWidth;
 	var stoPosto=1440;
 	var faktor=width/stoPosto;
@@ -646,7 +648,6 @@ $(window).resize(function(){
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}else {
-		console.log($(".navigation").css("width"));
 		/*$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);*/
 		$(".navigation ul").css('margin-left', widthFotr-425);
