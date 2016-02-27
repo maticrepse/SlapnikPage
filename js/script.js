@@ -605,18 +605,19 @@ $(document).ready(function(){
 		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
 		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
 	}else if(width<1441){
-		console.log("pod 1441");
 		$(".navigation h1").css('font-size', 80*faktor);
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
 		$("#kontaktTab").css("margin-top", 236*faktor);
+		$(".navigation ul").css('margin-left', 0);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
+		console.log($(".navigation").css("width"));
 	}else {
-		console.log("nad 1441");
 		/*$(".CarouselClass").css('width', "37.037%");
 		 $(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);*/
+		$(".navigation ul").css('margin-left', $(".navigation").css("width")-425);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}
@@ -639,11 +640,14 @@ $(window).resize(function(){
 		$(".kolekcije").css('font-size', 55*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
 		$("#kontaktTab").css("margin-top", 236*faktor);
+		$(".navigation ul").css('margin-left', 0);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}else {
+		//console.log($(".navigation").css("width"));
 		/*$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);*/
+		$(".navigation ul").css('margin-left', $(".navigation").css("width")-425);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}
