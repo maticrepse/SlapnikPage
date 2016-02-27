@@ -627,16 +627,16 @@ $(window).resize(function(){
 		$(".CarouselClass").css('width', "60%");
 		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
 		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
-	}else if(width<1441){
+	}else{
 		$(".navigation h1").css('font-size', 80*faktor);
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
-	}else{
+	}/*else if(width<1441){
 		$(".CarouselClass").css('width', "37.037%");
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);
-	}
+	}*/
 });
 
 /*
