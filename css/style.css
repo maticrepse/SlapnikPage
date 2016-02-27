@@ -9,6 +9,8 @@
 	margin-left: 25px;
 	font-size: 80px;
 	color: #828181;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
 }
 .navigation ul {
 	padding: 0px;
@@ -19,17 +21,24 @@
 	margin-top: 50px;
 	font-size: 55px;
 	color: #8C8D89;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
 }
 .podatki{
 	margin-top: 50px;
 	font-size: 34px;
 	color: #92938F;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
 }
 .kolekcije a{
 	color: #A2A2A2;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
 }
 .podatki a{
 	color: #C1C0C0;
+
 }
 .navigation li {
 	padding: 0px;
@@ -79,6 +88,8 @@
 	font-size: 20px;
 	width: 80%;
 	margin-top: 177px;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
 	/*margin-left: 50px;*/
 }
 #kontaktTab p {
