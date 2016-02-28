@@ -166,7 +166,7 @@
 	}
 	#opisMobilnoOnas{
 		margin-top: 100px;
-		margin-bottom: 50px;
+		margin-bottom: 60px;
 	}
 	.CarouselClass{
 		margin-top: 20px;
@@ -179,6 +179,7 @@
 
 	#kontaktTab{
 		margin-top: 80px;
+		font-size: 17px;
 	}
 	#onasTab p {
 		width: 80%;
