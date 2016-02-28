@@ -21,12 +21,13 @@ $(document).ready(function(){
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
 				//$(".ullsNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
+			} else if ($("#opisMobilnoOnas").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#slapnikTab").fadeToggle(400);
 					$("#opisMobilnoSlapnik").slideToggle(400);
 				});
-				$("#onasTab").fadeToggle(400);
+				$("#defaultTab").fadeToggle(400);
+				$("#opisMobilnoOnas").slideToggle(400);
 				//$(".onasNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
@@ -87,12 +88,13 @@ $(document).ready(function(){
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
 				//$(".ullsNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
+			} else if ($("#opisMobilnoOnas").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#enatriTab").fadeToggle(400);
 					$("#opisMobilnoEnatri").slideToggle(400);
 				});
-				$("#onasTab").fadeToggle(400);
+				$("#defaultTab").fadeToggle(400);
+				$("#opisMobilnoOnas").slideToggle(400);
 				//$(".onasNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
@@ -153,12 +155,13 @@ $(document).ready(function(){
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
 				//$(".slapnikNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
+			} else if ($("#opisMobilnoOnas").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#ullsTab").fadeToggle(400);
 					$("#opisMobilnoUlls").slideToggle(400);
 				});
-				$("#onasTab").fadeToggle(400);
+				$("#defaultTab").fadeToggle(400);
+				$("#opisMobilnoOnas").slideToggle(400);
 				//$(".onasNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
@@ -205,43 +208,43 @@ $(document).ready(function(){
 			//$(".onasNav").css("font-weight", "bold");
 			if ($("#opisMobilnoEnatri").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$("#opisMobilnoOnas").slideToggle(400);
 				});
 				$("#opisMobilnoEnatri").slideToggle(400);
 				$("#enatriTab").fadeToggle(400);
 				//$(".enatriNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoUlls").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$("#opisMobilnoOnas").slideToggle(400);
 				});
 				$("#opisMobilnoUlls").slideToggle(400);
 				$("#ullsTab").fadeToggle(400);
 				//$(".ullsNav").css("font-weight", "normal");
 			} else if ($("#opisMobilnoSlapnik").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$("#opisMobilnoOnas").slideToggle(400);
 				});
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
 				//$(".slapnikNav").css("font-weight", "normal");
 			} else if ($("#kontaktTab").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
-					$("#onasTab").fadeToggle(400);
+					$("#defaultTab").fadeToggle(400);
+					$("#opisMobilnoOnas").slideToggle(400);
 				});
 				$("#kontaktTab").fadeToggle(400);
 				//$(".kontaktNav").css("font-weight", "normal");
 			} else {
-				if ($("#onasTab").css('display') == "block") {
-					$(".navbar-content").slideToggle(400, function(){
-						$("#defaultTab").fadeToggle(400);
-					});
-					$("#onasTab").fadeToggle(400);
+				if ($("#opisMobilnoOnas").css('display') == "block") {
+					$(".navbar-content").slideToggle(400);
+					$("#opisMobilnoOnas").slideToggle(400);
 					//$(".onasNav").css("font-weight", "normal");
 				} else {
-					$(".navbar-content").slideToggle(400, function(){
-						$("#onasTab").fadeToggle(400);
-					});
-					$("#defaultTab").fadeToggle(400);
+					$(".navbar-content").slideToggle(400);
+					$("#opisMobilnoOnas").slideToggle(400);
 					//$(".ullsNav").css("font-weight", "bold");
 				}
 			}
@@ -269,11 +272,12 @@ $(document).ready(function(){
 				$("#opisMobilnoSlapnik").slideToggle(400);
 				$("#slapnikTab").fadeToggle(400);
 				//$(".slapnikNav").css("font-weight", "normal");
-			} else if ($("#onasTab").css('display') == "block") {
+			} else if ($("#opisMobilnoOnas").css('display') == "block") {
 				$(".navbar-content").slideToggle(400, function(){
 					$("#kontaktTab").fadeToggle(400);
 				});
-				$("#onasTab").fadeToggle(400);
+				$("#defaultTab").fadeToggle(400);
+				$("#opisMobilnoOnas").slideToggle(400);
 				//$(".onasNav").css("font-weight", "normal");
 			} else {
 				if ($("#kontaktTab").css('display') == "block") {
@@ -600,18 +604,20 @@ $(document).ready(function(){
 	var faktor=width/stoPosto;
 	if(width<768){
 		//@media (max-width: 767px)
-		$(".navbar-toggle").css('left', width/2-22-15);
-		$(".CarouselClass").css('left', (width-(width*0.6))/2);
-		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
-		$(".CarouselClass").css('width', "60%");
-		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
-		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
+		$(".navbar-toggle").css('right', width/2-22-15);
+		$(".CarouselClass").css('left', (width-(width*0.7))/2);
+		$(".opisMobilno").css('margin-left', (width-(width*0.7))/2);
+		$(".CarouselClass").css('width', "70%");
+		$("#onasTab").css('margin-left', (width-(width*0.7))/2);
+		$("#kontaktTab").css('margin-left', (width-(width*0.7))/2);
 	}else if(width<1441){
 		$(".navigation h1").css('font-size', 80*faktor);
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
 		$("#kontaktTab").css("margin-top", 236*faktor);
+		$(".kolekcije").css("margin-top", 75*faktor);
+		$(".podatki").css("margin-top", 75*faktor);
 		$(".navigation ul").css('margin-left', 0);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
@@ -632,18 +638,20 @@ $(window).resize(function(){
 	var faktor=width/stoPosto;
 	if(width<768){
 		//@media (max-width: 767px)
-		$(".navbar-toggle").css('left', width/2-22-15);
-		$(".CarouselClass").css('left', (width-(width*0.6))/2);
-		$(".opisMobilno").css('margin-left', (width-(width*0.6))/2);
-		$(".CarouselClass").css('width', "60%");
-		$("#onasTab").css('margin-left', (width-(width*0.6))/2);
-		$("#kontaktTab").css('margin-left', (width-(width*0.6))/2);
+		$(".navbar-toggle").css('right', width/2-22-15);
+		$(".CarouselClass").css('left', (width-(width*0.7))/2);
+		$(".opisMobilno").css('margin-left', (width-(width*0.7))/2);
+		$(".CarouselClass").css('width', "70%");
+		$("#onasTab").css('margin-left', (width-(width*0.7))/2);
+		$("#kontaktTab").css('margin-left', (width-(width*0.7))/2);
 	}else if(width<1441){
 		$(".navigation h1").css('font-size', 80*faktor);
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
 		$("#kontaktTab").css("margin-top", 236*faktor);
+		$(".kolekcije").css("margin-top", 75*faktor);
+		$(".podatki").css("margin-top", 75*faktor);
 		$(".navigation ul").css('margin-left', 0);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
