@@ -660,7 +660,6 @@ $(window).resize(function(){
 		$(".CarouselClass").css('left', ((width*0.75)-(width*0.75)*0.37037)/2);*/
 		$(".navigation ul").css('margin-left', widthFotr-425);
 		$("#kontaktTab").css("margin-left", 250*faktor);
-		$("#kontaktTab").css("margin-top", 236*faktor);
 		$(".CarouselClass").css('width', 450*faktor);
 		$(".CarouselClass").css('left', ((width*0.666)-450*faktor)/2);
 	}
