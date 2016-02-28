@@ -614,6 +614,7 @@ $(document).ready(function(){
 		$(".navigation h1").css('font-size', 80*faktor);
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
+		$("#kontaktTab").css("font-size", 20*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
 		$("#kontaktTab").css("margin-top", 236*faktor);
 		$(".kolekcije").css("margin-top", 75*faktor);
@@ -649,6 +650,7 @@ $(window).resize(function(){
 		$(".navigation h1").css('font-size', 80*faktor);
 		$(".podatki").css('font-size', 34*faktor);
 		$(".kolekcije").css('font-size', 55*faktor);
+		$("#kontaktTab").css("font-size", 20*faktor);
 		$("#kontaktTab").css("margin-left", 250*faktor);
 		$("#kontaktTab").css("margin-top", 236*faktor);
 		$(".kolekcije").css("margin-top", 75*faktor);
