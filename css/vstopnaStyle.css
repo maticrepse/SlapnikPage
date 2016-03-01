@@ -1,0 +1,27 @@
+.naslov {
+	font-family: 'Bodoni MT', Didot;
+	text-align: center;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
+	margin-top: 10%;
+	font-size: 80px;
+	margin-bottom: 5%;
+	color: rgb(130,129,129);
+}
+.znamke {
+	font-family: 'Bodoni MT', Didot;
+	text-align: center;
+	-webkit-transform: scale(0.9,1.25);
+	transform: scale(0.9,1.25);
+	font-size: 50px;
+	color: rgb(162,162,162);
+	margin: 0px;
+	padding: 0px;
+}
+.znamke p {
+	margin: 0px;
+	padding: 0px;
+}
+a, a:active, a:hover, a:link, a:visited {
+	text-decoration: none;
+}
