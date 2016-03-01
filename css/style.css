@@ -41,6 +41,9 @@
 	color: #C1C0C0;
 
 }
+ul{
+	line-height: 100%;
+}
 .navigation li {
 	padding: 0px;
 	margin: 0px;
@@ -54,12 +57,13 @@
 	color: gray;
 }
 .navigation p {
-	text-align: left;
-	/*text-align: right;*/
+	/*text-align: left;*/
+	text-align: right;
 	margin-left: 0px;
 	font-size: 50%;
 	font-weight: 300;
 	color: #828181;
+	line-height: 110%;
 }
 #slapnikTab{
 	/*Odkomentiraj spodnjo vrstico (display: block;), da bo izbran ta tab pri vstopu v stran in zakomentiraj vrstico display: none;*/
@@ -77,18 +81,21 @@
 	font-family: 'Bodoni MT', Didot;
 	width: 80%;
 	font-size: 20px;
-	margin-top: 140px;
+	margin-top: 190px;
 }
 #onasTab p {
-	margin-top: 20px;
 	color: #6C6C69;
+	/*margin-left: 175px;*/
+	text-align: center;
+	width: 450px;
 }
 #kontaktTab{
 	display: none;
 	font-family: 'Bodoni MT', Didot;
 	font-size: 20px;
-	width: 80%;
-	margin-top: 236px;
+	text-align: center;
+	/*width: 80%;*/
+	margin-top: 230px;
 	-webkit-transform: scale(0.9,1.25);
 	transform: scale(0.9,1.25);
 	/*margin-left: 50px;*/
